@@ -118,14 +118,30 @@ html {
 
 .link-button {
   display: inline-block;
+  margin: 10px 20px;
+  color: #524f4e;
+  background: white;
+  -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  -webkit-transition: .3s;
+  transition: .3s;
+  display: inline-block;
   font-family: Open Sans;
   font-weight: 700;
   background: #FFCC00;
+  color: #05051E;
   padding: 20px 50px;
   border-radius: 15px;
   text-transform: uppercase;
-  -webkit-transition: background 0.8s ease 0s;
-  transition: background 0.8s ease 0s;
+}
+
+.link-button:hover {
+  background: #FFCC00;
+  -webkit-box-shadow: 0 15px 20px rgba(255, 204, 0, 0.4);
+          box-shadow: 0 15px 20px rgba(255, 204, 0, 0.4);
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
+  color: #05051E;
 }
 
 .link-button:visited {
@@ -134,21 +150,21 @@ html {
 
 .link-button:active {
   color: #05051E;
-}
-
-.link-button:hover {
-  background: #eea74385;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
 }
 
 .title {
   font-family: Ubuntu;
   font-size: 30px;
-  line-height: 100px;
+  padding: 30px 0;
+  line-height: 30px;
 }
 
 .subtitle {
   font-family: open sans;
   font-size: 20px;
+  line-height: 30px;
 }
 
 /*----------------<imports>----------------*/
@@ -156,7 +172,6 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 10;
   background: #3098F3;
   color: #ffffff;
   height: 100px;
@@ -417,6 +432,10 @@ footer {
 
 /*----------------</about-us>----------------*/
 /*----------------<categories>----------------*/
+.swiper-slide .container {
+  max-width: 900px;
+}
+
 .swiper-button-prev {
   color: #ffffff;
 }
@@ -447,8 +466,20 @@ footer {
           justify-content: space-between;
 }
 
-.category img {
-  height: 650px;
+.category .list li {
+  position: relative;
+}
+
+.category .list li::before {
+  content: '';
+  display: block;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  left: -18px;
+  top: 9px;
 }
 
 /*----------------</categories>----------------*/

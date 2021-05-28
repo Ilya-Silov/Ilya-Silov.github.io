@@ -8,5 +8,14 @@ jQuery(document).ready(function() {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    // Autoplay
+    autoplay: {
+      delay: 5000,
+    },
+    //keyboard control
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+    },
   });
 });

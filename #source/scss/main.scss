@@ -154,6 +154,9 @@
 .swiper-wrapper {
 }
 .swiper-slide {
+	.container{
+		max-width: 900px;
+	}
 }
 .swiper-button-prev {
 	color: $white;
@@ -177,10 +180,25 @@
 	align-items: center;
 	justify-content: space-between;
 	img{
-		height: 650px;
 	}
 	.title{
 		
+	}
+	.list{
+		li{
+			position: relative;
+			&::before{
+				content: '';
+				display: block;
+				height: 12px;
+				width: 12px;
+				border-radius: 50%;
+				background: rgba(0, 0, 0, 0.8);
+				position: absolute;
+				left: -18px;
+				top: 9px;
+			}
+		}
 	}
 }
 

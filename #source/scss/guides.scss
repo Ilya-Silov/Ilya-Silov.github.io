@@ -102,13 +102,16 @@ body.lock{
     &__content {
         background: $white;
         padding: 30px;
-        max-width: 80%;
+        width: 80%;
         min-height: 80%;
         transform: scale(0);
         transition: 0.3s;
     }
 
     &__close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
         height: 50px;
         img {
             height:50px;
@@ -142,8 +145,8 @@ body.lock{
 
 /*-----<info>-----*/
 .info {
+    padding: 100px 0 0 ;
     color: $white;
-    padding: 50px 0;
     background: $blue;
 }
 
@@ -199,6 +202,7 @@ body.lock{
     border-radius: 50px 0 0 50px;
     padding: 50px 30px;
     flex: 80% 0 0;
+    margin: 0 0 10px 0;
 }
 
 //internet

@@ -61,13 +61,26 @@ html {
 
 .link-button {
 	display: inline-block;
+	margin: 10px 20px;
+	color: #524f4e;
+	background: white;
+	box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+	transition: .3s;
+	display: inline-block;
 	font-family: Open Sans;
 	font-weight: 700;
 	background: $yellow;
+	color: $dark;
 	padding: 20px 50px;
 	border-radius: 15px;
 	text-transform: uppercase;
-	transition: background 0.8s ease 0s;
+
+	&:hover {
+		background: $yellow;
+		box-shadow: 0 15px 20px rgba(255, 204, 0, .4);
+		transform: translateY(-7px);
+		color: $dark;
+	}
 
 	&:visited {
 		color: $dark;
@@ -75,24 +88,21 @@ html {
 
 	&:active {
 		color: $dark;
+		transform: translateY(0px);
 	}
-
-	&:hover {
-		background: #eea74385;
-
-	}
-
 }
 
 .title {
 	font-family: Ubuntu;
 	font-size: 30px;
-	line-height: 100px;
+	padding: 30px 0;
+	line-height: 30px;
 }
 
 .subtitle {
 	font-family: open sans;
 	font-size: 20px;
+	line-height: 30px;
 }
 
 
@@ -102,4 +112,3 @@ html {
 @import '_footer';
 
 /*----------------</imports>----------------*/
-
