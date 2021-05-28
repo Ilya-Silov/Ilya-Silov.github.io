@@ -1,0 +1,212 @@
+@import '_universal';
+
+html {
+    background: $blue;
+    color: $dark;
+}
+body.lock{
+    overflow: hidden;
+}
+
+.guides-title {
+    line-height: 50px;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 80%;
+        background: #A2C2D0;
+        height: 5px;
+        border-radius: 5px;
+        margin: 0 0 20px 0;
+    }
+}
+
+.cards {
+    display: flex;
+    flex-wrap: 1;
+}
+
+.card {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 50px;
+    font-family: open sans;
+    flex: 30% 0 0;
+    margin: 20px;
+    border-radius: 50px;
+    background: #D9E5E4;
+    text-align: center;
+    box-shadow: 0px 0px 19px 3px rgba(34, 60, 80, 0.3);
+    transition: 0.2s;
+
+    &:hover {
+        box-shadow: 0px 0px 19px 3px rgba(34, 60, 80, 0.6);
+    }
+
+    .card-item {
+        padding: 20px;
+    }
+
+    .card-img {
+        border-radius: 40px 40px 0 0;
+        overflow: hidden;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .card-title {
+        font-weight: 700;
+        font-size: 20px;
+        padding: 20px 0 0;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 80%;
+            margin: 20px auto 0;
+            height: 2px;
+            background: #A2C2D0;
+        }
+    }
+
+    .card-text {
+        padding: 20px;
+    }
+
+}
+
+
+/*-----<popup>-----*/
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease 0s;
+
+
+    &__content {
+        background: $white;
+        padding: 30px;
+        max-width: 80%;
+        min-height: 80%;
+        transform: scale(0);
+        transition: 0.3s;
+    }
+
+    &__close {
+        height: 50px;
+        img {
+            height:50px;
+        }
+    }
+
+    &__title {}
+
+    &__text {}
+
+    &.open{
+        opacity: 1;
+        visibility: visible;
+
+        .popup__content{
+            transform: scale(1);
+        }
+    }
+}
+
+.popup-body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+
+/*-----</popup>-----*/
+
+/*-----<info>-----*/
+.info {
+    color: $white;
+    padding: 50px 0;
+    background: $blue;
+}
+
+.info-body {
+    padding: 10px;
+
+    &__title {}
+
+    &__subtitle {}
+}
+
+/*-----</info>-----*/
+
+/*-----<>-----*/
+.guides {
+    background: $blue;
+}
+
+.guides-body {
+    display: flex;
+}
+
+.guides-menu {
+    padding: 50px 20px 50px 10px;
+    background: $blue;
+    flex: 20% 0 0;
+    display: flex;
+    flex-direction: column;
+
+    a {
+        font-family: Open sans;
+        font-weight: 700;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 19px 3px rgba(34, 60, 80, 0.4) inset;
+        background: $white;
+        color: black;
+        transition: 0.2s;
+
+        &:visited {
+            color: black;
+        }
+
+        &:hover {
+            padding: 25px;
+        }
+    }
+}
+
+.guides-content {
+    background: $white;
+    border-radius: 50px 0 0 50px;
+    padding: 50px 30px;
+    flex: 80% 0 0;
+}
+
+//internet
+.internet {
+
+    &__title {}
+}
+
+.internet-cards {}
+
+.internet-card {}

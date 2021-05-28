@@ -1,0 +1,105 @@
+/*----------------"nullstyle"----------------*/
+@import '_nullstyle';
+/*----------------"nullstyle"----------------*/
+
+
+/*----------------<Variables>----------------*/
+
+$nd-white: #F2EAE2;
+$white: #ffffff;
+$dark: #05051E;
+$red: #FE6571;
+$blue: #3098F3;
+$yellow: #FFCC00;
+
+/*----------------</Variables>----------------*/
+
+
+@keyframes scroll {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateY(80px);
+	}
+}
+
+
+
+
+
+/*----------------<Fonts>----------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+/*----------------</Fonts>----------------*/
+
+
+
+
+
+
+/*----------------<Container>----------------*/
+
+.container {
+	width: 1400px;
+	margin: 0 auto;
+	height: inherit;
+}
+
+/*----------------</Container>----------------*/
+
+
+html {
+	color: $dark;
+}
+
+.link-button {
+	display: inline-block;
+	font-family: Open Sans;
+	font-weight: 700;
+	background: $yellow;
+	padding: 20px 50px;
+	border-radius: 15px;
+	text-transform: uppercase;
+	transition: background 0.8s ease 0s;
+
+	&:visited {
+		color: $dark;
+	}
+
+	&:active {
+		color: $dark;
+	}
+
+	&:hover {
+		background: #eea74385;
+
+	}
+
+}
+
+.title {
+	font-family: Ubuntu;
+	font-size: 30px;
+	line-height: 100px;
+}
+
+.subtitle {
+	font-family: open sans;
+	font-size: 20px;
+}
+
+
+/*----------------<imports>----------------*/
+
+@import '_header';
+@import '_footer';
+
+/*----------------</imports>----------------*/
+
