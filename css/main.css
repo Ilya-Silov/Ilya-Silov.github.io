@@ -246,7 +246,7 @@ header {
 }
 
 footer {
-  background: #05051E;
+  background: url("../../img/Nr9XEKoYq2U.jpg") no-repeat 0 0/cover;
 }
 
 .footer-body {
@@ -421,8 +421,9 @@ footer {
 .about-us-card__text {
   color: #ffffff;
   padding: 30px;
-  font-size: 24px;
+  font-size: 22px;
   text-align: center;
+  line-height: 27px;
 }
 
 .about-us-card:hover {
@@ -437,15 +438,20 @@ footer {
 }
 
 .swiper-button-prev {
-  color: #ffffff;
+  color: #05051E;
 }
 
 .swiper-button-next {
-  color: #ffffff;
+  color: #05051E;
 }
 
 .categories {
-  height: 850px;
+  height: 500px;
+  background: #FFCC00;
+}
+
+.categories-title {
+  margin: 0 0 -90px 0;
   background: #FFCC00;
 }
 
@@ -473,13 +479,13 @@ footer {
 .category .list li::before {
   content: '';
   display: block;
-  height: 12px;
-  width: 12px;
+  height: 15px;
+  width: 15px;
   border-radius: 50%;
-  background: rgba(0, 0, 0, 0.8);
+  background: url("../../img/icons/angle-right-circle.svg") no-repeat 0 0/cover;
   position: absolute;
   left: -18px;
-  top: 9px;
+  top: 7px;
 }
 
 /*----------------</categories>----------------*/

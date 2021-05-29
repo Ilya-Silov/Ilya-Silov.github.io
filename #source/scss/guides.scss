@@ -4,7 +4,8 @@ html {
     background: $blue;
     color: $dark;
 }
-body.lock{
+
+body.lock {
     overflow: hidden;
 }
 
@@ -56,6 +57,15 @@ body.lock{
 
         img {
             max-width: 100%;
+        }
+
+    }
+
+    a {
+        color: $dark;
+
+        &:visited {
+            color: $dark;
         }
     }
 
@@ -113,20 +123,23 @@ body.lock{
         right: 15px;
         top: 15px;
         height: 50px;
+
         img {
-            height:50px;
+            height: 50px;
         }
     }
 
     &__title {}
 
-    &__text {}
+    &__text {
+        text-align: left;
+    }
 
-    &.open{
+    &.open {
         opacity: 1;
         visibility: visible;
 
-        .popup__content{
+        .popup__content {
             transform: scale(1);
         }
     }
@@ -145,7 +158,7 @@ body.lock{
 
 /*-----<info>-----*/
 .info {
-    padding: 100px 0 0 ;
+    padding: 100px 0 0;
     color: $white;
     background: $blue;
 }
@@ -165,11 +178,8 @@ body.lock{
     background: $blue;
 }
 
-.guides-body {
-    display: flex;
-}
-
 .guides-menu {
+    position: fixed;
     padding: 50px 20px 50px 10px;
     background: $blue;
     flex: 20% 0 0;
@@ -192,9 +202,14 @@ body.lock{
         }
 
         &:hover {
-            padding: 25px;
+            padding: 25px 20px;
         }
     }
+}
+
+.guides-body {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .guides-content {

@@ -246,7 +246,7 @@ header {
 }
 
 footer {
-  background: #05051E;
+  background: url("../../img/Nr9XEKoYq2U.jpg") no-repeat 0 0/cover;
 }
 
 .footer-body {
@@ -331,6 +331,14 @@ body.lock {
   max-width: 100%;
 }
 
+.card a {
+  color: #05051E;
+}
+
+.card a:visited {
+  color: #05051E;
+}
+
 .card .card-title {
   font-weight: 700;
   font-size: 20px;
@@ -389,6 +397,10 @@ body.lock {
   height: 50px;
 }
 
+.popup__text {
+  text-align: left;
+}
+
 .popup.open {
   opacity: 1;
   visibility: visible;
@@ -431,13 +443,8 @@ body.lock {
   background: #3098F3;
 }
 
-.guides-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .guides-menu {
+  position: fixed;
   padding: 50px 20px 50px 10px;
   background: #3098F3;
   -webkit-box-flex: 20%;
@@ -471,7 +478,16 @@ body.lock {
 }
 
 .guides-menu a:hover {
-  padding: 25px;
+  padding: 25px 20px;
+}
+
+.guides-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .guides-content {

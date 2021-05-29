@@ -6,6 +6,7 @@
 	color: $white;
 	height: 100vh;
 	background: $blue;
+
 }
 
 .main-screen-body {
@@ -133,8 +134,9 @@
 	&__text {
 		color: #ffffff;
 		padding: 30px;
-		font-size: 24px;
+		font-size: 22px;
 		text-align: center;
+		line-height: 27px;
 	}
 
 	&:hover{
@@ -159,18 +161,21 @@
 	}
 }
 .swiper-button-prev {
-	color: $white;
+	color: $dark;
 }
 .swiper-button-next {
-	color: $white;
+	color: $dark;
 }
 //swiper
 
 .categories {
-	height: 850px;
+	height: 500px;
 	background: $yellow;
 }
-
+.categories-title{
+	margin: 0 0 -90px 0;
+	background: $yellow;
+}
 .categories-body{
 	height: 100%;
 }
@@ -179,24 +184,21 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	img{
-	}
-	.title{
-		
-	}
+
 	.list{
 		li{
 			position: relative;
 			&::before{
 				content: '';
 				display: block;
-				height: 12px;
-				width: 12px;
+				height: 15px;
+				width: 15px;
 				border-radius: 50%;
-				background: rgba(0, 0, 0, 0.8);
+				//background: rgba(0, 0, 0, 0.8);
+				background: url('../../img/icons/angle-right-circle.svg') no-repeat 0 0 /cover;
 				position: absolute;
 				left: -18px;
-				top: 9px;
+				top: 7px;
 			}
 		}
 	}
