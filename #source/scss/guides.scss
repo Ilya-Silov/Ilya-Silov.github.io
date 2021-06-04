@@ -33,13 +33,14 @@ body.lock {
 }
 
 .card {
+    position: relative;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border-radius: 50px;
     font-family: open sans;
-    flex: 30% 0 0;
+    flex: 300px 0 0;
     margin: 20px;
     border-radius: 50px;
     background: #D9E5E4;
@@ -183,7 +184,7 @@ body.lock {
 }
 
 .guides-menu {
-    position: fixed;
+    position: absolute;
     padding: 50px 20px 50px 10px;
     background: $blue;
     flex: 20% 0 0;
@@ -219,7 +220,7 @@ body.lock {
 .guides-content {
     background: $white;
     border-radius: 50px 0 0 50px;
-    padding: 50px 30px;
+    padding: 50px;
     flex: 80% 0 0;
     margin: 0 0 10px 0;
 }
@@ -228,4 +229,37 @@ body.lock {
 .internet {
 
     &__title {}
+}
+
+
+
+
+
+
+@media (max-width:1400px) {
+    .container{
+        max-width: 90%;
+    }
+
+    .info{
+        padding: 10px;
+    }
+	
+    .guides-menu{
+        left: 10px;
+    }
+
+    .cards{
+        flex-wrap: wrap;
+    }
+    .card{
+        flex: 300px 0 0;
+        max-height: 350px;
+    }
+}
+@media (max-width:992px) {
+
+}
+@media (max-width:767px) {
+
 }

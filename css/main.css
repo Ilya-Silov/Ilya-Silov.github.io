@@ -109,6 +109,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 1400px;
   margin: 0 auto;
   height: inherit;
+  padding: 0 10px;
 }
 
 /*----------------</Container>----------------*/
@@ -556,6 +557,32 @@ footer {
 }
 
 @media (max-width: 767px) {
+  .main-screen {
+    max-height: 570px;
+  }
+  .main-screen-body {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .main-screen-body__content {
+    padding: 10px;
+  }
+  .main-screen-body__subtitle {
+    margin: 0 0 10px;
+  }
+  .main-screen-body__links {
+    margin: 0 0 20px;
+  }
+  .scrolling {
+    display: none;
+  }
+  .about-us-body {
+    padding: 10px;
+  }
+  .about-us-body-cards {
+    padding: 10px;
+  }
   .categories-title {
     display: none;
   }

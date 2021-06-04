@@ -109,6 +109,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 1400px;
   margin: 0 auto;
   height: inherit;
+  padding: 0 10px;
 }
 
 /*----------------</Container>----------------*/
@@ -315,6 +316,7 @@ body.lock {
 }
 
 .card {
+  position: relative;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -328,9 +330,9 @@ body.lock {
           justify-content: space-between;
   border-radius: 50px;
   font-family: open sans;
-  -webkit-box-flex: 30%;
-      -ms-flex: 30% 0 0px;
-          flex: 30% 0 0;
+  -webkit-box-flex: 300px;
+      -ms-flex: 300px 0 0px;
+          flex: 300px 0 0;
   margin: 20px;
   border-radius: 50px;
   background: #D9E5E4;
@@ -472,7 +474,7 @@ body.lock {
 }
 
 .guides-menu {
-  position: fixed;
+  position: absolute;
   padding: 50px 20px 50px 10px;
   background: #3098F3;
   -webkit-box-flex: 20%;
@@ -521,9 +523,31 @@ body.lock {
 .guides-content {
   background: #ffffff;
   border-radius: 50px 0 0 50px;
-  padding: 50px 30px;
+  padding: 50px;
   -webkit-box-flex: 80%;
       -ms-flex: 80% 0 0px;
           flex: 80% 0 0;
   margin: 0 0 10px 0;
+}
+
+@media (max-width: 1400px) {
+  .container {
+    max-width: 90%;
+  }
+  .info {
+    padding: 10px;
+  }
+  .guides-menu {
+    left: 10px;
+  }
+  .cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .card {
+    -webkit-box-flex: 300px;
+        -ms-flex: 300px 0 0px;
+            flex: 300px 0 0;
+    max-height: 350px;
+  }
 }
