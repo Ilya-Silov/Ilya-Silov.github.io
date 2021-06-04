@@ -273,14 +273,13 @@ footer {
 
 @media (max-width: 767px) {
   .container {
-    width: none;
+    width: 100%;
     padding: 0 20px;
   }
 }
 
 /*----------------<First screen>----------------*/
 .main-screen {
-  min-height: 650px;
   color: #ffffff;
   height: 100vh;
   background: #3098F3;
@@ -557,10 +556,13 @@ footer {
 }
 
 @media (max-width: 767px) {
-  .swiper-button-prev {
+  .categories-title {
     display: none;
   }
-  .swiper-button-next {
+  .categories {
     display: none;
+  }
+  .link-body {
+    padding: 0;
   }
 }

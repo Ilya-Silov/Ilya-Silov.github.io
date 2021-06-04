@@ -2,7 +2,6 @@
 /*----------------<First screen>----------------*/
 
 .main-screen {
-	min-height: 650px;
 	color: $white;
 	height: 100vh;
 	background: $blue;
@@ -261,11 +260,16 @@
 
 }
 @media (max-width:767px) {
-
-	.swiper-button-prev {
+	
+	.categories-title{
 		display: none;
 	}
-	.swiper-button-next {
+	.categories{
 		display: none;
+	}
+
+	
+	.link-body{
+		padding: 0;
 	}
 }
