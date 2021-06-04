@@ -169,9 +169,9 @@ html {
 
 /*----------------<imports>----------------*/
 header {
-  position: absolute;
-  top: 0;
-  left: 0;
+  /*   position: absolute;
+    top: 0;
+    left: 0; */
   background: #3098F3;
   color: #ffffff;
   height: 100px;
@@ -254,7 +254,30 @@ footer {
   padding: 5px 0;
 }
 
+.footer-body__names a {
+  color: #ffffff;
+}
+
 /*----------------</imports>----------------*/
+@media (max-width: 1400px) {
+  .container {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: none;
+    padding: 0 20px;
+  }
+}
+
 html {
   background: #3098F3;
   color: #05051E;
@@ -276,6 +299,11 @@ body.lock {
   height: 5px;
   border-radius: 5px;
   margin: 0 0 20px 0;
+}
+
+.comingsoon {
+  padding-left: 20px;
+  font-size: 30px;
 }
 
 .cards {

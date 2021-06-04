@@ -22,6 +22,10 @@ body.lock {
         margin: 0 0 20px 0;
     }
 }
+.comingsoon{
+    padding-left: 20px;
+    font-size: 30px;
+}
 
 .cards {
     display: flex;
@@ -225,7 +229,3 @@ body.lock {
 
     &__title {}
 }
-
-.internet-cards {}
-
-.internet-card {}

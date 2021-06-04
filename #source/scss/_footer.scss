@@ -7,5 +7,9 @@ footer {
     color: $nd-white;
     padding: 5px 0;
 
-    &__names {}
+    &__names {
+        a{
+            color: $white;
+        }
+    }
 }
