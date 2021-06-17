@@ -288,6 +288,15 @@ body.lock {
   overflow: hidden;
 }
 
+.paragraf {
+  padding: 10px;
+  text-indent: 3em;
+}
+
+.strong {
+  font-weight: 700;
+}
+
 .guides-title {
   line-height: 50px;
 }
@@ -311,8 +320,8 @@ body.lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: 1;
-      flex-wrap: 1;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .card {
@@ -359,6 +368,7 @@ body.lock {
 
 .card .card-img img {
   max-width: 100%;
+  max-height: 180px;
 }
 
 .card a {
@@ -523,7 +533,7 @@ body.lock {
 .guides-content {
   background: #ffffff;
   border-radius: 50px 0 0 50px;
-  padding: 50px;
+  padding: 40px;
   -webkit-box-flex: 80%;
       -ms-flex: 80% 0 0px;
           flex: 80% 0 0;
